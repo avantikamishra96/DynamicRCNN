@@ -4,8 +4,6 @@
 <p align="center">
     <a href="https://arxiv.org/abs/1910.03151" alt="ArXiv">
         <img src="https://img.shields.io/badge/Paper-arXiv-blue.svg" /></a>
-    <a href="https://openaccess.thecvf.com/content_CVPR_2020/html/Wang_ECA-Net_Efficient_Channel_Attention_for_Deep_Convolutional_Neural_Networks_CVPR_2020_paper.html"                     alt="CVF">
-          <img src="https://img.shields.io/badge/CVF-Page-purple.svg" /></a>
     <a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_ECA-Net_Efficient_Channel_Attention_for_Deep_Convolutional_Neural_Networks_CVPR_2020_paper.pdf"                        alt="PDF">
           <img src="https://img.shields.io/badge/CVPR-PDF-neon.svg" /></a>
     <a href="https://openaccess.thecvf.com/content_CVPR_2020/supplemental/Wang_ECA-Net_Efficient_Channel_CVPR_2020_supplemental.pdf" alt="Supp">
@@ -89,8 +87,7 @@ To run inference, simply run [this notebook](https://github.com/digantamisra98/R
 
 ##### Logs:
 
-The logs are provided in the [Logs folder](https://github.com/digantamisra98/Reproducibilty-Challenge-ECANET/tree/main/logs). It contains two files:
-1. ```20210102_160817.log```: Contains logs from epoch 1 to epoch 6
+Full logs are available [here](/dynamic_rcnn.log).
 
 ## WandB logs:
 
