@@ -17,8 +17,6 @@
         <img src="https://img.shields.io/badge/WandB-Dashboard-gold.svg" /></a>
     <a href="https://wandb.ai/diganta/ECANet-sweep/reports/ECA-Net-Efficient-Channel-Attention-for-Deep-Convolutional-Neural-Networks-NeurIPS-Reproducibility-Challenge-2020--VmlldzozODU0NTM" alt="RC2020">
         <img src="https://img.shields.io/badge/WandB-Report1-yellow.svg" /></a>
-    <a href="https://wandb.ai/diganta/ECANet-sweep/reports/Efficient-Channel-Attention--VmlldzozNzgwOTE" alt="Report">
-        <img src="https://img.shields.io/badge/WandB-Report2-yellow.svg" /></a>
     <a href="https://github.com/BangguWu/ECANet" alt="Report">
         <img src="https://img.shields.io/badge/Official-Repository-black.svg" /></a>
 </p>
