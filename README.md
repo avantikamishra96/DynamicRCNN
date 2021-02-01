@@ -53,15 +53,15 @@ This reproduction is build on PyTorch and MMDetection. Ensure you have CUDA Tool
 
 ##### Reproduced Results:
 
-|Backbone|Detectors|BBox_AP|BBox_AP<sub>50</sub>|BBox_AP<sub>75</sub>|BBox_AP<sub>S</sub>|BBox_AP<sub>M</sub>|BBox_AP<sub>L</sub>|Segm_AP|Segm_AP<sub>50</sub>|Segm_AP<sub>75</sub>|Segm_AP<sub>S</sub>|Segm_AP<sub>M</sub>|Segm_AP<sub>L</sub>|Weights|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|ECANet-50|Mask RCNN|**34.1**|**53.4**|**37.0**|**21.1**|**37.2**|**42.9**|**31.4**|**50.6**|**33.2**|**18.1**|**34.3**|**41.1**|[Google Drive](https://drive.google.com/file/d/1IrxmSDDOzHKBJPkXYvCHNe-Koqm3Idtq/view?usp=sharing)|
+|Backbone|Detectors|BBox_AP|BBox_AP<sub>50</sub>|BBox_AP<sub>75</sub>|BBox_AP<sub>S</sub>|BBox_AP<sub>M</sub>|BBox_AP<sub>L</sub>|Weights|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|ResNet-50|Dynamic RCNN|**38.9**|**57.5**|**42.8**|**21.9**|**41.9**|**51.1**|[Google Drive](https://drive.google.com/file/d/1o9sUGu37jKs7_Yx6Uyp7dQazbnT2yycx/view?usp=sharing)|
 
 #### Download MS-COCO 2017:
 
-Simply execute [this script](https://gist.githubusercontent.com/mkocabas/a6177fc00315403d31572e17700d7fd9/raw/a6ad5e9d7567187b65f222115dffcb4b8667e047/coco.sh) in your terminal to download and process the MS-COCO 2017 dataset. You can use the following command to do the same:
+Simply execute [this script](https://gist.github.com/avantikamishra96/5bda3aa5c76fb3b3a5a4b1ba59df6bbd) in your terminal to download and process the MS-COCO 2017 dataset. You can use the following command to do the same:
 ```
-curl https://gist.githubusercontent.com/mkocabas/a6177fc00315403d31572e17700d7fd9/raw/a6ad5e9d7567187b65f222115dffcb4b8667e047/coco.sh | sh
+curl https://gist.github.com/avantikamishra96/5bda3aa5c76fb3b3a5a4b1ba59df6bbd | sh
 ```
 
 #### Training:
