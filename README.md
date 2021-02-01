@@ -83,7 +83,7 @@ The dashboard for this project can be accessed [here](https://wandb.ai/avantikam
 
 ##### Machine Specifications and Software versions:
 
-- torch: 1.7.1+cu110
+- torch: 1.7.2+cu110
 - GPU: 1 NVIDA V100, 32 GB memory for 8 CPUs
 
 ## Cite:
