@@ -22,7 +22,7 @@
 </p>
 
 <p align="center">
-    <img width="1000" src="img.PNG">
+    <img width="1000" src="image.PNG">
     </br>
     <em>Bounding Box results of Dynamic-RCNN using samples from the test set of MS-COCO 2017 dataset.</em>
 </p>
