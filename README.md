@@ -12,10 +12,6 @@
           <img src="https://img.shields.io/badge/CVPR-Supp-pink.svg" /></a>
     <a href="https://www.youtube.com/watch?v=ipZ2AS1b0rI" alt="Video">
           <img src="https://img.shields.io/badge/CVPR-Video-maroon.svg" /></a>
-    <a href="https://mybinder.org/v2/gh/digantamisra98/Reproducibilty-Challenge-ECANET/HEAD" alt="ArXiv">
-        <img src="https://mybinder.org/badge_logo.svg" /></a>
-    <a href="https://twitter.com/DigantaMisra1" alt="Twitter">
-          <img src="https://img.shields.io/twitter/url/https/twitter.com/DigantaMisra1.svg?style=social&label=Follow%20%40DigantaMisra1" /></a>
     <br>
     <a href="https://wandb.ai/diganta/ECANet-sweep?workspace=user-diganta" alt="Dashboard">
         <img src="https://img.shields.io/badge/WandB-Dashboard-gold.svg" /></a>
@@ -25,8 +21,6 @@
         <img src="https://img.shields.io/badge/WandB-Report2-yellow.svg" /></a>
     <a href="https://github.com/BangguWu/ECANet" alt="Report">
         <img src="https://img.shields.io/badge/Official-Repository-black.svg" /></a>
-    <a href="https://blog.paperspace.com/attention-mechanisms-in-computer-vision-ecanet/" alt="Report">
-        <img src="https://img.shields.io/badge/Paperspace-Blog-white.svg" /></a>
 </p>
 
 <p align="center">
