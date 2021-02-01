@@ -2,20 +2,16 @@
 <p align="center">ECCV 2020 <a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123600256.pdf" target="_blank">(Official Paper)</a></p>
 
 <p align="center">
-    <a href="https://arxiv.org/abs/1910.03151" alt="ArXiv">
+    <a href="https://arxiv.org/abs/2004.06002" alt="ArXiv">
         <img src="https://img.shields.io/badge/Paper-arXiv-blue.svg" /></a>
-    <a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Wang_ECA-Net_Efficient_Channel_Attention_for_Deep_Convolutional_Neural_Networks_CVPR_2020_paper.pdf"                        alt="PDF">
-          <img src="https://img.shields.io/badge/CVPR-PDF-neon.svg" /></a>
-    <a href="https://openaccess.thecvf.com/content_CVPR_2020/supplemental/Wang_ECA-Net_Efficient_Channel_CVPR_2020_supplemental.pdf" alt="Supp">
-          <img src="https://img.shields.io/badge/CVPR-Supp-pink.svg" /></a>
-    <a href="https://www.youtube.com/watch?v=ipZ2AS1b0rI" alt="Video">
+    <a href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123600256.pdf"                        alt="PDF">
+          <img src="https://img.shields.io/badge/ECCV-PDF-neon.svg" /></a>
+    <a href="https://youtu.be/PNoEBRTHZqE" alt="Video">
           <img src="https://img.shields.io/badge/CVPR-Video-maroon.svg" /></a>
     <br>
-    <a href="https://wandb.ai/diganta/ECANet-sweep?workspace=user-diganta" alt="Dashboard">
+    <a href="https://wandb.ai/avantikamishra/mmdetection-tools?workspace=user-avantikamishra" alt="Dashboard">
         <img src="https://img.shields.io/badge/WandB-Dashboard-gold.svg" /></a>
-    <a href="https://wandb.ai/diganta/ECANet-sweep/reports/ECA-Net-Efficient-Channel-Attention-for-Deep-Convolutional-Neural-Networks-NeurIPS-Reproducibility-Challenge-2020--VmlldzozODU0NTM" alt="RC2020">
-        <img src="https://img.shields.io/badge/WandB-Report1-yellow.svg" /></a>
-    <a href="https://github.com/BangguWu/ECANet" alt="Report">
+    <a href="https://github.com/hkzhang95/DynamicRCNN" alt="Report">
         <img src="https://img.shields.io/badge/Official-Repository-black.svg" /></a>
 </p>
 
@@ -45,12 +41,6 @@ This reproduction is build on PyTorch and MMDetection. Ensure you have CUDA Tool
 
 ### MS-COCO:
 
-<p align="left">
-    <img width="500" src="figures/seg_ep.gif">
-    <br>
-    <em>Training progress of ECANet-50-Mask-RCNN for 12 epochs.</em>
-</p>
-
 ##### Reproduced Results:
 
 |Backbone|Detectors|BBox_AP|BBox_AP<sub>50</sub>|BBox_AP<sub>75</sub>|BBox_AP<sub>S</sub>|BBox_AP<sub>M</sub>|BBox_AP<sub>L</sub>|Weights|
@@ -73,17 +63,16 @@ This project uses [MMDetection](https://github.com/open-mmlab/mmdetection) for t
 
 After making the following changes to run the training, use the following command:
 ```
-python tools/train.py mmdetection/configs/mask_rcnn/mask_rcnn_r50_fpn_1x_coco.py
+python tools/train.py mmdetection/configs/dynamic_rcnn/dynamic_rcnn_r50_fpn_1x_coco.py
 ```
 
 To resume training from any checkpoint, use the following command (for example - Epoch 5 in this case):
 ```
-python tools/train.py configs/mask_rcnn/mask_rcnn_r50_fpn_1x_coco.py --resume-from work_dirs/mask_rcnn_r50_fpn_1x_coco/epoch_5.pth
+python tools/train.py configs/dynamic_rcnn/dynamic_rcnn_r50_fpn_1x_coco.py --resume-from work_dirs/dynamic_rcnn_r50_fpn_1x_coco/epoch_5.pth
 ```
 
 #### Inference:
 
-To run inference, simply run [this notebook](https://github.com/digantamisra98/Reproducibilty-Challenge-ECANET/blob/main/inference_demo.ipynb).
 
 ##### Logs:
 
@@ -91,22 +80,23 @@ Full logs are available [here](/dynamic_rcnn.log).
 
 ## WandB logs:
 
-The dashboard for this project can be accessed [here](https://wandb.ai/diganta/ECANet-sweep?workspace=user-diganta).
+The dashboard for this project can be accessed [here](https://wandb.ai/avantikamishra/mmdetection-tools?workspace=user-avantikamishra).
 
 ##### Machine Specifications and Software versions:
 
 - torch: 1.7.1+cu110
-- GPU: 1 NVIDA V100, 16GB Memory on GCP
+- GPU: 1 NVIDA V100, 32 GB memory for 8 CPUs
 
 ## Cite:
 
 ```
-@InProceedings{Wang_2020_CVPR,
-author = {Wang, Qilong and Wu, Banggu and Zhu, Pengfei and Li, Peihua and Zuo, Wangmeng and Hu, Qinghua},
-title = {ECA-Net: Efficient Channel Attention for Deep Convolutional Neural Networks},
-booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
-month = {June},
-year = {2020}
+@inproceedings{zhang2020dynamic,
+  title={Dynamic R-CNN: Towards high quality object detection via dynamic training},
+  author={Zhang, Hongkai and Chang, Hong and Ma, Bingpeng and Wang, Naiyan and Chen, Xilin},
+  booktitle={European Conference on Computer Vision},
+  pages={260--275},
+  year={2020},
+  organization={Springer}
 }
 ```
 
