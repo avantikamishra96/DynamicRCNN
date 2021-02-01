@@ -8,7 +8,6 @@
           <img src="https://img.shields.io/badge/ECCV-PDF-neon.svg" /></a>
     <a href="https://youtu.be/PNoEBRTHZqE" alt="Video">
           <img src="https://img.shields.io/badge/CVPR-Video-maroon.svg" /></a>
-    <br>
     <a href="https://wandb.ai/avantikamishra/mmdetection-tools?workspace=user-avantikamishra" alt="Dashboard">
         <img src="https://img.shields.io/badge/WandB-Dashboard-gold.svg" /></a>
     <a href="https://github.com/hkzhang95/DynamicRCNN" alt="Report">
