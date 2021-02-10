@@ -23,9 +23,6 @@
 # Introduction
 
 <p float="center">
-    <img src="figures/eca_module.jpg" width="1000" alt="Struct.">
-    <br>
-    <em>Structural comparison of SE and ECA attention mechanism.</em>
 </p>
 
 *Although two-stage object detectors have continuously advanced the state-of-the-art performance in recent years, the training process itself is far from crystal. In this work, we first point out the inconsistency problem between the fixed network settings and the dynamic training procedure, which greatly affects the performance. For example, the fixed label assignment strategy and regression loss function cannot fit the distribution change of proposals and are harmful to training high quality detectors. Then, we propose Dynamic R-CNN to adjust the label assignment criteria (IoU threshold) and the shape of regression loss function (parameters of SmoothL1 Loss) automatically based on the statistics of proposals during training. This dynamic design makes better use of the training samples and pushes the detector to fit more high quality samples. Specifically, our method improves upon ResNet-50-FPN baseline with 1.9% AP and 5.5% AP90 on the MS COCO dataset with no extra overhead.*
@@ -52,7 +49,7 @@ This reproduction is build on PyTorch and MMDetection. Ensure you have CUDA Tool
 
 Simply execute [this script](https://gist.github.com/avantikamishra96/5bda3aa5c76fb3b3a5a4b1ba59df6bbd) in your terminal to download and process the MS-COCO 2017 dataset. You can use the following command to do the same:
 ```
-curl https://gist.github.com/avantikamishra96/5bda3aa5c76fb3b3a5a4b1ba59df6bbd | sh
+curl https://gist.githubusercontent.com/avantikamishra96/5bda3aa5c76fb3b3a5a4b1ba59df6bbd/raw/433a7dbd2d1ba9b325cb04736e40d74678933e34/coco | sh
 ```
 
 #### Training:
@@ -64,7 +61,7 @@ This project uses [MMDetection](https://github.com/open-mmlab/mmdetection) for t
 
 After making the following changes to run the training, use the following command:
 ```
-python tools/train.py mmdetection/configs/dynamic_rcnn/dynamic_rcnn_r50_fpn_1x_coco.py
+python tools/train.py configs/dynamic_rcnn/dynamic_rcnn_r50_fpn_1x_coco.py
 ```
 
 To resume training from any checkpoint, use the following command (for example - Epoch 5 in this case):
