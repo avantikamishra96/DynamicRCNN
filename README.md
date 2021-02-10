@@ -49,7 +49,7 @@ This reproduction is build on PyTorch and MMDetection. Ensure you have CUDA Tool
 
 Simply execute [this script](https://gist.github.com/avantikamishra96/5bda3aa5c76fb3b3a5a4b1ba59df6bbd) in your terminal to download and process the MS-COCO 2017 dataset. You can use the following command to do the same:
 ```
-curl https://gist.githubusercontent.com/avantikamishra96/5bda3aa5c76fb3b3a5a4b1ba59df6bbd/raw/433a7dbd2d1ba9b325cb04736e40d74678933e34/coco | sh
+curl https://gist.githubusercontent.com/avantikamishra96/5bda3aa5c76fb3b3a5a4b1ba59df6bbd/raw/433a7dbd2d1ba9b325cb04736e40d74678933e34/coco.sh | sh
 ```
 
 #### Training:
